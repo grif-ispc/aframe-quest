@@ -1,0 +1,17 @@
+{
+  "name": "aframe-quest",
+  "description": "GRIF aframq quest test",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "start": "budo --live --verbose --port 3000 --open"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "browserify": "^16.5.1",
+    "budo": "^11.6.3",
+    "ghpages": "0.0.10",
+    "shelljs": "^0.8.4",
+    "webpack": "^4.43.0"
+  }
+}
