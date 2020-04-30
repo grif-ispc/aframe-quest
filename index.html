@@ -3,11 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>aframe-material😲😆😛</title>
-  <meta name="description" content="Aframe-Material">
+  <meta name="description" content="">
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-  <script
-    src="https://rawgit.com/mayognaise/aframe-mouse-cursor-component/master/dist/aframe-mouse-cursor-component.min.js"></script>
   <script src="https://cdn.rawgit.com/zcanter/aframe-gradient-sky/master/dist/gradientsky.min.js"></script>
   <script src="https://cdn.rawgit.com/etiennepinchon/aframe-material/master/dist/aframe-material.min.js"></script>
   <script type="text/javascript">
@@ -23,20 +20,39 @@
 <body>
   <a-scene>
     <a-assets>
-      <video id="penguin-sledding" autoplay loop="true" src="https://grifsims.s3-eu-west-1.amazonaws.com/videos/situacio1/s1v1+intro+logo_25fps+Btr+1200.mp4"></video>
+      <video id="penguin-sledding" autoplay loop="true"
+        src="https://grifsims.s3-eu-west-1.amazonaws.com/videos/situacio1/s1v1+intro+logo_25fps+Btr+1200.mp4"></video>
     </a-assets>
     <a-entity camera look-controls="{active='true'}" position="0 1.6 0"></a-entity>
 
-    <a-video src="#penguin-sledding" width="16" height="9" position="0 0 -8"></a-video>
+    <a-video id="video" src="#penguin-sledding" width="16" height="9" position="0 2 -8"></a-video>
 
     <!-- BEGIN FORM -->
-    <a-rounded position="0 0 -2.5" width="9" height="4" radius="0.05" rotation="0 0 0" scale="0.7 0.7 0.7">
+    <a-rounded color="#d1d1d1" opacity="1" position="-3 0 -2.5" width="9" height="4" radius="0.05" rotation="0 0 0"
+      scale="0.7 0.7 0.7">
       <a-form>
-        <a-checkbox position="0.2 1.5 0" width="3" name="stuff" label="I am a checkbox" checked="true"></a-checkbox>
-        <a-checkbox position="0.2 1.2 0" width="3" name="stuff" label="And I am another one" checked="true"
-          disabled="true"></a-checkbox>
-        <a-button position="0.2 0.8 0" name="stuff" value="Click me" type="raised"></a-button>
-        <a-button position="0.2 0.35 0" width="3" name="stuff" value="You cannot click me" disabled="true"></a-button>
+        <a-text color="#FFFF" position="0.59031 3.35081 0" value="Què fem?" text="color: #414141"></a-text>
+
+        <a-checkbox position="1.32613 2.79249 0" width="5" name="preg1"
+          label="Els ajudem de manera immediata, els sanitaris no porten nivell 2 això vol dir que no és un cas confirmat i per tant actuem normalment."
+          checked="false" >
+        </a-checkbox>
+
+        <a-checkbox position="1.32613 2.49012 0" width="5" name="preg2"
+          label="Ens apropem i preguntem si els hi cal la nostra ajuda. " checked="false">
+        </a-checkbox>
+
+        <a-checkbox position="1.32613 2.19012 0" width="5" name="preg3"
+          label="El caporal pregunta, respectant la distància de seguretat, si cal el nostre ajut i valora els mitjans necessaris"
+          checked="false" >
+        </a-checkbox>
+
+        <a-checkbox position="1.32613 1.89012 0" width="3" name="preg4"
+          label="Veient que no cal la nostra presència ens retirem." checked="false">
+        </a-checkbox>
+
+        <a-button position="0.2 0.3 0" name="cancel" value="Cancel.lar" type="raised"></a-button>
+        <a-button position="5.7 0.3 0" width="3" name="accept" value="Acceptar"></a-button>
       </a-form>
     </a-rounded>
     <!-- END FORM -->
