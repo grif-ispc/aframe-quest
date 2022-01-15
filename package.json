@@ -11,7 +11,7 @@
     "browserify": "^16.5.1",
     "budo": "^11.6.3",
     "ghpages": "0.0.10",
-    "shelljs": "^0.8.4",
+    "shelljs": "^0.8.5",
     "webpack": "^4.43.0"
   }
 }
